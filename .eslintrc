@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "jest": true
+  },
+
+  "rules": {
+    "react/react-in-jsx-scope": 0,
+    "require-jsdoc": "off",
+    "no-extra-semi": "off"
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "plugin:react/recommended"
+  ],
+
+  "plugins": [
+    "react"
+  ],
+
+  "settings": {
+    "react": {
+      "version": "16"
+    }
+  },
+  
+  "globals": {
+    "React": true,
+    "renderer": true
+  }
+}
